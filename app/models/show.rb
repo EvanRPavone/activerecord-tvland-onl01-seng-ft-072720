@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
 
   def actors_list
     # binding.pry
-    self.actors.collect do |n| 
+    self.actors.collect do |n|
     "#{n.first_name} #{n.last_name}"
     end
   end
